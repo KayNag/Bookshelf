@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    >
+    <TextView
+        android:id="@+id/grid_item_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="2dp"
+        android:textColor="@android:color/white"
+        android:singleLine="true"
+        >
+    </TextView>
+    
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="112dp"
+       	android:layout_gravity="center_horizontal"
+       	android:layout_marginBottom="8dp"
+       	android:background="@drawable/book_shadow"
+       	android:paddingRight="7dp"
+       	android:paddingBottom="10dp"
+    >
+	   	<ImageView
+	        android:id="@+id/grid_item_cover"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+       		android:scaleType="fitXY"
+       		android:layout_marginTop="1dp"
+       		android:layout_marginRight="3dp"
+	        >
+	    </ImageView>
+	   	<ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/grid_item_new"
+	        android:src="@drawable/book_new"
+	    	android:layout_gravity="top|right"     
+	        >
+	    </ImageView>
+    </FrameLayout>
+ 
+</LinearLayout>
